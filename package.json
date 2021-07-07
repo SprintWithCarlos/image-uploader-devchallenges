@@ -1,0 +1,15 @@
+{
+  "name": "image-uploader-devchallenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SprintWithCarlos/image-uploader-devchallenges.git",
+  "author": "Carlos Marchena <sprintwithcarlos@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "api": "cd api && yarn start",
+    "api-dev": "cd api && yarn dev"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}

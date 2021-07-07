@@ -31,6 +31,11 @@ app.post("/upload", upload.single("file"), async (req, res, next) => {
     next(err);
   }
 });
+app.get("/", (req, res) => {
+  return res.status(200).json({
+    message: "API for the Image Uploader Dev Challenge",
+  });
+});
 //Error Handling
 app.use((error, req, res, next) => {
   console.log(error);
