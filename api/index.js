@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
+const port = process.env.PORT || 5001;
 const helmet = require("helmet");
 const morgan = require("morgan");
 const cors = require("cors");
@@ -40,6 +40,6 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 //Start Server
-app.listen(5001, () => {
-  console.log("Backend server is running");
+app.listen(port, () => {
+  console.log(`Backend server is running at ${port}`);
 });
