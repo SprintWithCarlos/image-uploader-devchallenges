@@ -1,0 +1,25 @@
+@import ../../index
+.wrapper
+  text-align: left
+.progress
+  width: 100px
+  height: 100%
+  background-color: $Blue1
+  border-radius: 30px
+  animation: move 3s linear infinite
+
+.progressBar
+  width: 350px
+  height: 10px
+  background-color: $Gray6
+  margin-top: 30px
+  border-radius: 30px
+.loading
+
+@keyframes move
+  0%
+    transform: translateX(0)
+  50%
+    transform: translateX(250px)
+  100%
+    transform: translateX(100)

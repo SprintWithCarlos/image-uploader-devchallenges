@@ -6,9 +6,25 @@
           box-sizing: border-box;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 442px) {
   body {
-    height: 1440px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
