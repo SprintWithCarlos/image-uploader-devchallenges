@@ -39,7 +39,7 @@
 
 ![screenshot1](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/1.png)
 ![screenshot2](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/2.png)
-![screenshot3](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/3s.png)
+![screenshot3](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/3.png)
 
 I really enjoyed this challenge, I decided to replicate the mockups and instead focus all my energy in programming. I used Render for deployment, the experience has been great even though I still have to figure out how to do a monorepo deployment. I also used Filebase for storing the images, I'm really happy with the result.
 
