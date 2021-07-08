@@ -9,7 +9,7 @@
     "api": "cd api && yarn start",
     "deploy-api": "cd api && yarn",
     "api-dev": "cd api && yarn dev",
-    "front-build": "cd client && yarn build"
+    "front-build": "cd client && yarn && yarn build"
   },
   "devDependencies": {
     "concurrently": "^6.2.0"
