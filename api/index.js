@@ -5,8 +5,9 @@ const helmet = require("helmet");
 const morgan = require("morgan");
 const cors = require("cors");
 const multer = require("multer");
+const multerS3 = require("multer-s3");
 const path = require("path");
-
+const s3 = require("./filebase");
 //Middleware
 app.use(express.json());
 app.use(helmet());
@@ -15,19 +16,34 @@ app.use(cors());
 
 //File System
 app.use("/images", express.static(path.join(__dirname, "public/images")));
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, "public/images"),
-  filename: (req, file, cb) => {
-    // cb(null, req.body.name);
-    cb(null, Date.now().toString() + "-" + file.originalname);
-  },
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => cb(null, "public/images"),
+//   filename: (req, file, cb) => {
+//     // cb(null, req.body.name);
+//     cb(null, Date.now().toString() + "-" + file.originalname);
+//   },
+// });
+//const upload = multer({ storage });
+console.log(s3);
+const upload = multer({
+  storage: multerS3({
+    s3,
+    bucket: "devchallenges",
+    contentType: multerS3.AUTO_CONTENT_TYPE,
+    metadata: function (req, file, cb) {
+      cb(null, { fieldName: file.fieldname });
+    },
+    key: function (req, file, cb) {
+      cb(null, Date.now().toString() + "-" + file.originalname);
+    },
+  }),
 });
-const upload = multer({ storage });
 app.post("/upload", upload.single("file"), async (req, res, next) => {
+  console.log(req.file);
   try {
     return res.status(200).json({
       message: "File uploaded Successfully",
-      url: req.file.filename,
+      url: req.file.location,
     });
   } catch (err) {
     console.error(err);
