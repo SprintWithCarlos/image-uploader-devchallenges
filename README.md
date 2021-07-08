@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">{Imagen Uploader Challenge 1 for fullstack}</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://{client-nixu.onrender.com}">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://{github.com/SprintWithCarlos/image-uploader-devchallenges}">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,28 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot1](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/1.png)
+![screenshot2](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/2.png)
+![screenshot3](https://github.com/SprintWithCarlos/image-uploader-devchallenges/blob/main/3s.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+I really enjoyed this challenge, I decided to replicate the mockups and instead focus all my energy in programming. I used Render for deployment, the experience has been great even though I still have to figure out how to do a monorepo deployment. I also used Filebase for storing the images, I'm really happy with the result.
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Thanks Thu this is a great idea, I'm motivated to keep doing these challenges and sharing my experience. I finished almost 24 hours after starting, all the code done by myself, only React. State management done using hooks (useContext, useReduce, useState).
+It seems easy but is not :-D
+
+I also used sass instead of css to save time. I check most typical breakpoints and it worked, although if you find something wrong please contact me or submit a PR with your solution.
+
+The last button dispatches a reset action to go back to first screen. I consider this a better design solution that refreshing the browser. I have included a "Text" component done by myself that listens to pointer up and gives the user the option to change the selected text to clipboard. It could be easily adapted to copy the link when clicking the button.
+For icons I use fontawesome instead of material icons. It can be easily changed.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Node](https://nodejs.org/)
+- [Filebase](https://filebase.com/)
+- [Render](https://render.com/)
 
 ## Features
 
@@ -68,7 +74,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/SprintWithCarlos/image-uploader-devchallenges
 
 # Install dependencies
 $ npm install
@@ -81,12 +87,11 @@ $ npm start
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+Regarding image uploading, it's very important to set the content type if you are using multer. Otherwise the type is set by default to application/octet-stream.
+More information [here](https://www.npmjs.com/package/multer-s3)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [your-website.com](https://{sprintwithcarlos.github.io/})
+- GitHub [@your-username](https://{github.com/sprintwithcarlos})
+- Twitter [@your-twitter](https://{twitter.com/sprintwithcarl1})
