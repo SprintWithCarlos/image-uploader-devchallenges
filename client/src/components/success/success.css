@@ -9,6 +9,21 @@
 button {
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  padding: 0 0.625rem;
 }
 
 @media only screen and (min-width: 442px) {
@@ -138,5 +153,11 @@ section > *:last-child, section > * > *:last-child {
   color: white;
   padding: 0.625rem 1.25rem;
   font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 442px) {
+  .success .bottom p {
+    font-size: 0.44rem;
+  }
 }
 /*# sourceMappingURL=success.css.map */
