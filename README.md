@@ -92,6 +92,6 @@ More information [here](https://www.npmjs.com/package/multer-s3)
 
 ## Contact
 
-- Website [your-website.com](https://{sprintwithcarlos.github.io/})
-- GitHub [@your-username](https://{github.com/sprintwithcarlos})
-- Twitter [@your-twitter](https://{twitter.com/sprintwithcarl1})
+- Website [Sprint With Carlos](https://{sprintwithcarlos.github.io/})
+- GitHub [@sprintwithcarlos](https://{github.com/sprintwithcarlos})
+- Twitter [@sprintwithcarl1](https://{twitter.com/sprintwithcarl1})
